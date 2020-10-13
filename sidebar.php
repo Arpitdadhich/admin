@@ -3,7 +3,7 @@
     <?php
         $filename = basename($_SERVER['REQUEST_URI']);
 
-         $productmenu = array('products.php'.'categories.php'.'tags.php');
+         $productmenu = array('products.php','categories.php','tags.php');
     ?>
 
          <h1 id="sidebar-title"><a href="#">Simpla Admin</a></h1>
@@ -27,26 +27,26 @@
                 </li>
 
                 <li>
-                    <a href="#" class="nav-top-item<?php if(in_array($filename, $productmenu) ): ?>current<?php endif;  ?>"> <!-- Add the class "current" to current menu item -->
+                    <a href="#" class="nav-top-item <?php if(in_array($filename,$productmenu)):?>current<?php endif;?>"> <!-- Add the class "current" to current menu item -->
                     Products
                     </a>
                     <ul>
-                        <li><a  <?php if ($filename== 'products.php' ) : ?>class="current"<?php endif;?> href="products.php">Manage Product</a></li> <!-- Add class "current" to sub menu items also -->
-                        <li><a  <?php if ($filename== 'categories.php' ) : ?>class="current"<?php endif;?> href="categories.php">Manage Categories</a></li>
-                        <li><a  <?php if ($filename== 'tags.php' ) : ?>class="current"<?php endif;?> href="tags.php">Manage Tags</a></li>
+                    <li><a  <?php if($filename =='products.php'): ?>class="current"<?php endif; ?> href="products.php">Manage Product</a></li> <!-- Add class "current" to sub menu items also -->
+                    <li><a  <?php if($filename =='categories.php'): ?>class="current"<?php endif; ?> href="categories.php">Manage Categories</a></li>
+                    <li><a  <?php if($filename =='tags.php'): ?>class="current"<?php endif; ?>  href="tags.php">Manage Tags</a></li>
                     </ul>
                 </li>
 
                 <li>
-                    <a href="#" class="nav-top-item<?php if(in_array($filename, $productmenu) ):?>current<?php endif;?>">
+                    <a href="#" class="nav-top-item">
                         Users
                     </a>
                     <ul>
-                        <li><a <?php if ($filename== 'users.php' ) : ?>class="current"<?php endif;?> href="users.php">Manage User</a></li>
+                        <li><a href="users.php">Manage User</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#" class="nav-top-item<?php if(in_array($filename, $productmenu) ):?>current<?php endif;?>">
+                    <a href="#" class="nav-top-item">
                         Orders
                     </a>
                     <ul>
@@ -55,7 +55,7 @@
                 </li>
 
                 <li>
-                    <a href="#" class="nav-top-item<?php if(in_array($filename, $productmenu) ):?>current<?php endif;?>">
+                    <a href="#" class="nav-top-item">
                         Settings
                     </a>
                     <ul>
