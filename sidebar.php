@@ -6,7 +6,7 @@
          $productmenu = array('products.php','categories.php','tags.php');
     ?>
 
-         <h1 id="sidebar-title"><a href="#">Simpla Admin</a></h1>
+         <h1 id="sidebar-title"><a href="#">Admin</a></h1>
 
             <!-- Logo (221px wide) -->
             <a href="#"><img id="logo" src="resources/images/logo.png" alt="Simpla Admin logo" /></a>
@@ -31,7 +31,7 @@
                     Products
                     </a>
                     <ul>
-                    <li><a  <?php if($filename =='products.php'): ?>class="current"<?php endif; ?> href="products.php">Manage Product</a></li> <!-- Add class "current" to sub menu items also -->
+                    <li><a  <?php if($filename =='products.php'): ?>class="current"<?php endif; ?> href="products.php">Add Product</a></li> <!-- Add class "current" to sub menu items also -->
                     <li><a  <?php if($filename =='categories.php'): ?>class="current"<?php endif; ?> href="categories.php">Manage Categories</a></li>
                     <li><a  <?php if($filename =='tags.php'): ?>class="current"<?php endif; ?>  href="tags.php">Manage Tags</a></li>
                     </ul>
